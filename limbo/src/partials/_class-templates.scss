@@ -1,0 +1,19 @@
+@mixin class($class-name) {
+    @at-root #{'.'}#{$class-name} {
+        @content;
+    }
+}
+
+@mixin createClass($class-name, $property, $value) { 
+    @include class($class-name) {
+        #{$property}: $value;
+    }
+}
+
+@mixin testClass($class-name, $properties: ()) {
+    @each $property-name, $property-value in $properties {
+        @include class($class-name) {
+            #{$property-name}: $property-value;
+        }
+    }
+}

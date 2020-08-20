@@ -1,0 +1,9 @@
+@import '../partials/class-templates';
+
+// $class-name: 'danger';
+// $property: 'background-color';
+// $value: red;
+
+@include createClass('danger', 'background-color', red);
+
+@include testClass('safe', ('background-color': green, 'color': white, 'padding-left': 1rem, 'padding-right': 1rem));
