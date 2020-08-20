@@ -4,13 +4,13 @@
     }
 }
 
-@mixin createClass($class-name, $property, $value) { 
-    @include class($class-name) {
-        #{$property}: $value;
-    }
-}
+// @mixin createClass($class-name, $property, $value) { 
+//     @include class($class-name) {
+//         #{$property}: $value;
+//     }
+// }
 
-@mixin testClass($class-name, $properties: ()) {
+@mixin createClass($class-name, $properties: ()) {
     @each $property-name, $property-value in $properties {
         @include class($class-name) {
             #{$property-name}: $property-value;
