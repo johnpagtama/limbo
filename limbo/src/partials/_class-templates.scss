@@ -1,19 +1,38 @@
-@mixin class($class-name) {
+// Base class mixin
+@mixin class($class-name, $properties: ()) {
     @at-root #{'.'}#{$class-name} {
-        @content;
-    }
-}
-
-// @mixin createClass($class-name, $property, $value) { 
-//     @include class($class-name) {
-//         #{$property}: $value;
-//     }
-// }
-
-@mixin createClass($class-name, $properties: ()) {
-    @each $property-name, $property-value in $properties {
-        @include class($class-name) {
+        @each $property-name, $property-value in $properties {
             #{$property-name}: $property-value;
         }
     }
 }
+
+// Element class mixin
+@mixin element($class-name, $properties: ()) {
+    @at-root #{&}__#{$class-name} {
+        @each $property-name, $property-value in $properties {
+            #{$property-name}: $property-value;
+        }
+    }
+}
+
+// Modifier class mixin
+@mixin modifier($class-name, $properties: ()) {
+    @at-root #{&}--#{$class-name} {
+        @each $property-name, $property-value in $properties {
+            #{$property-name}: $property-value;
+        }
+    }    
+}
+
+// & Selector mixin
+
+// % Selector mixin
+
+// :Pseudo-class mixin
+
+// -Prefixed-properties mixin
+
+// CSS reset mixin
+
+// Base button mixin

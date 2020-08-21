@@ -1,0 +1,4 @@
+@import '../../../partials/class-templates';
+
+@include class('action', ('background-color': blue, 'color': white, 'padding-left': 1rem, 'padding-right': 1rem, 'font-size': 1rem));
+@include class('safe', ('background-color': green, 'color': white, 'padding-left': 1rem, 'padding-right': 1rem, 'font-size': 1rem));
