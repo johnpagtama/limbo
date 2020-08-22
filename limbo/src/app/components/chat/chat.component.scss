@@ -1,4 +1,16 @@
 @import '../../../partials/class-templates';
 
-@include class('action', ('background-color': blue, 'color': white, 'padding-left': 1rem, 'padding-right': 1rem, 'font-size': 1rem));
-@include class('safe', ('background-color': green, 'color': white, 'padding-left': 1rem, 'padding-right': 1rem, 'font-size': 1rem));
+@include block(layout, (display: grid, 
+                        height: 100vh, 
+                        margin: 0 auto, 
+                        color: white,
+                        grid-template-columns: 1fr 3.5fr 1fr, 
+                        grid-template-areas: 
+                            "layout__servers  layout__main layout__users" 
+                            "layout__servers  layout__main layout__users" 
+                            "layout__servers  layout__main layout__users")) {
+
+    @include element(servers, (grid-area: layout__servers, opacity: 50%, background-color: blue));
+    @include element(main, (grid-area: layout__main, opacity: 50%, background-color: gray));
+    @include element(users, (grid-area: layout__users, opacity: 50%, background-color: red));
+}

@@ -1,9 +1,23 @@
+// Property generator mixin
+// @mixin property($properties: ()) {
+//     @each $property-name, $property-value in $properties {
+//         #{$property-name}: $property-value;
+//     }
+// }
+
+// Content mixin
+// @mixin content() {
+//     @content;
+// }
+
 // Base class mixin
-@mixin class($class-name, $properties: ()) {
+@mixin block($class-name, $properties: ()) {
     @at-root #{'.'}#{$class-name} {
         @each $property-name, $property-value in $properties {
             #{$property-name}: $property-value;
         }
+
+        @content;
     }
 }
 
@@ -13,6 +27,8 @@
         @each $property-name, $property-value in $properties {
             #{$property-name}: $property-value;
         }
+        
+        @content;
     }
 }
 
@@ -24,6 +40,8 @@
         }
     }    
 }
+
+// CSS Reset mixin
 
 // & Selector mixin
 
