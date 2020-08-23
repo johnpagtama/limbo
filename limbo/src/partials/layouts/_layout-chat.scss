@@ -1,0 +1,30 @@
+@import '../../../partials/class-templates';
+
+%grid-area-servers {
+    grid-area: layout-chat__servers;
+    opacity: 50%;
+    background-color: blue;
+}
+
+%grid-area-main {
+    grid-area: layout-chat__main;
+    opacity: 50%;
+    background-color: gray;
+}
+
+%grid-area-users {
+    grid-area: layout-chat__users;
+    opacity: 50%;
+    background-color: red;    
+}
+
+%grid-chat {
+    display: grid; 
+    height: 100vh; 
+    margin: 0 auto; 
+    color: white;
+    grid-template-columns: 1fr 3.5fr 1fr; 
+    grid-template-areas: "layout-chat__servers  layout-chat__main layout-chat__users" 
+                         "layout-chat__servers  layout-chat__main layout-chat__users" 
+                         "layout-chat__servers  layout-chat__main layout-chat__users";
+}

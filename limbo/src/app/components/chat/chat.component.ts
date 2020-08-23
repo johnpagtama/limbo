@@ -6,9 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./chat.component.scss']
 })
 export class ChatComponent implements OnInit {
-
+  servers: string[] = ['💩💩💩💩💩'];
   constructor() { }
-
+  
   ngOnInit(): void {
   }
 

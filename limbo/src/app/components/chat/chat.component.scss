@@ -1,16 +1,21 @@
 @import '../../../partials/class-templates';
 
-@include block(layout, (display: grid, 
+$c-3a3a3a: #2b2b30;
+$c-2c2c2c: #252629;
+$c-222222: #1e1d20;
+@include block(layout-chat, (display: grid, 
                         height: 100vh, 
                         margin: 0 auto, 
                         color: white,
-                        grid-template-columns: 1fr 3.5fr 1fr, 
-                        grid-template-areas: 
-                            "layout__servers  layout__main layout__users" 
-                            "layout__servers  layout__main layout__users" 
-                            "layout__servers  layout__main layout__users")) {
+                        grid-template-columns: 0.2fr 1fr 3.5fr 1fr, 
+                        grid-template-rows: 3.5rem,
+                        grid-template-areas: "layout-chat__servers layout-chat__channels  layout-chat__header layout-chat__users" 
+                                             "layout-chat__servers layout-chat__channels  layout-chat__main layout-chat__users" 
+                                             "layout-chat__servers layout-chat__channels  layout-chat__main layout-chat__users")) {
 
-    @include element(servers, (grid-area: layout__servers, opacity: 50%, background-color: blue));
-    @include element(main, (grid-area: layout__main, opacity: 50%, background-color: gray));
-    @include element(users, (grid-area: layout__users, opacity: 50%, background-color: red));
+    @include element(servers, (grid-area: layout-chat__servers, background-color: $c-222222));
+    @include element(channels, (grid-area: layout-chat__channels, background-color: $c-2c2c2c));
+    @include element(header, (grid-area: layout-chat__header, background-color: $c-222222));
+    @include element(main, (grid-area: layout-chat__main, background-color: $c-3a3a3a));
+    @include element(users, (grid-area: layout-chat__users, background-color: $c-2c2c2c));
 }

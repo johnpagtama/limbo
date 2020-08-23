@@ -1,14 +1,17 @@
-<div class="layout">
-    <div class="layout__servers">
-        Server Component
+<div class="layout-chat">
+    <div *ngFor="let s of servers;" class="layout-chat__servers">
+        <div style="font-size: 2rem; text-align: center">{{s}}</div>
     </div>
-    <!-- <div class="layout__channels">
+    <div class="layout-chat__channels">
         Channel Component
-    </div> -->
-    <div class="layout__main">
+    </div>
+     <div class="layout-chat__header">
+        Header Component
+    </div>
+    <div class="layout-chat__main">
         Main Component
     </div>
-    <div class="layout__users">
+    <div class="layout-chat__users">
         User Component
     </div>
 </div>
