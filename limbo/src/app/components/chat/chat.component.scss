@@ -9,13 +9,13 @@ $c-222222: #1e1d20;
                         color: white,
                         grid-template-columns: 0.2fr 1fr 3.5fr 1fr, 
                         grid-template-rows: 3.5rem,
-                        grid-template-areas: "layout-chat__servers layout-chat__channels  layout-chat__header layout-chat__users" 
-                                             "layout-chat__servers layout-chat__channels  layout-chat__main layout-chat__users" 
-                                             "layout-chat__servers layout-chat__channels  layout-chat__main layout-chat__users")) {
+                        grid-template-areas: "layout-chat__servers layout-chat__channels  layout-chat__channels-header  layout-chat__users" 
+                                             "layout-chat__servers layout-chat__channels  layout-chat__main             layout-chat__users" 
+                                             "layout-chat__servers layout-chat__channels  layout-chat__main             layout-chat__users")) {
 
     @include element(servers, (grid-area: layout-chat__servers, background-color: $c-222222));
     @include element(channels, (grid-area: layout-chat__channels, background-color: $c-2c2c2c));
-    @include element(header, (grid-area: layout-chat__header, background-color: $c-222222));
+    @include element(channels-header, (grid-area: layout-chat__channels-header, background-color: $c-222222));
     @include element(main, (grid-area: layout-chat__main, background-color: $c-3a3a3a));
     @include element(users, (grid-area: layout-chat__users, background-color: $c-2c2c2c));
 }
