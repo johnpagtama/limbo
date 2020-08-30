@@ -7,7 +7,7 @@ import { ChatComponent } from './components/chat/chat.component';
 import { SigninComponent } from './components/signin/signin.component';
 import { SearchComponent } from './components/shared/search/search.component';
 import { MessageComponent } from './components/shared/message/message.component';
-import { MainComponent } from './components/main/main.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,7 @@ import { MainComponent } from './components/main/main.component';
     SigninComponent,
     SearchComponent,
     MessageComponent,
-    MainComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
