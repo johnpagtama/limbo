@@ -1,5 +1,28 @@
 <section class="layout-home">
-    <header class="layout-home__header">Nav</header>
+    <header class="layout-home__header">
+        <ng-container *ngTemplateOutlet="nav"></ng-container>
+        <ng-container *ngTemplateOutlet="nav"></ng-container>
+
+        <ng-template #nav>
+            <nav>
+                💩
+                <ul>
+                    <ng-container *ngFor="let routerLink of routerLinks">
+                        <ng-container *ngTemplateOutlet="list; context: routerLink"></ng-container>
+                    </ng-container>
+                </ul>
+
+                <button>Download</button>
+            </nav>
+        </ng-template>
+
+        <ng-template #list let-link="link" let-text="text">
+            <li>
+                <a routerLink="{{link}}">{{text}}</a>
+            </li>
+        </ng-template>
+        
+    </header>
     <!-- <main> -->
         <section class="layout-home__feature-1">
             <header>
