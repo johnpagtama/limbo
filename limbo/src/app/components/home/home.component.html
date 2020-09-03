@@ -1,14 +1,13 @@
 <section class="layout-home">
     <header class="layout-home__header">
         <ng-container *ngTemplateOutlet="nav"></ng-container>
-        <ng-container *ngTemplateOutlet="nav"></ng-container>
 
         <ng-template #nav>
             <nav>
-                💩
+                💩Limbo
                 <ul>
-                    <ng-container *ngFor="let routerLink of routerLinks">
-                        <ng-container *ngTemplateOutlet="list; context: routerLink"></ng-container>
+                    <ng-container *ngFor="let headerLink of headerLinks">
+                        <ng-container *ngTemplateOutlet="headerList; context: headerLink"></ng-container>
                     </ng-container>
                 </ul>
 
@@ -16,7 +15,7 @@
             </nav>
         </ng-template>
 
-        <ng-template #list let-link="link" let-text="text">
+        <ng-template #headerList let-link="link" let-text="text">
             <li>
                 <a routerLink="{{link}}">{{text}}</a>
             </li>
@@ -45,6 +44,27 @@
             </header>
         </section>
     <!-- </main> -->
-    <footer class="layout-home__footer">&copy; Copyright 2020, Limbo</footer>
+    <footer class="layout-home__footer">
+        Social Links
+        <ng-container *ngTemplateOutlet="footer"></ng-container>
+        💩Limbo
+        &copy; 2020, Limbo
+        
+        <ng-template #footer>
+            <nav>
+                <ul>
+                    <ng-container *ngFor="let footerLink of footerLinks">
+                        <ng-container *ngTemplateOutlet="footerList; context: footerLink"></ng-container>
+                    </ng-container>
+                </ul>
+            </nav>
+        </ng-template>
+        
+        <ng-template #footerList let-link="link" let-text="text">
+            <li>
+                <a routerLink="{{link}}">{{text}}</a>
+            </li>
+        </ng-template>
+    </footer>
 </section>
 <!-- <a routerLink="/Chat">Open in your browser</a> -->
