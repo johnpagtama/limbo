@@ -13,10 +13,12 @@ $bg-lime: lime;
                                                   "layout-home__feature-1"
                                                   "layout-home__feature-2"
                                                   "layout-home__feature-3"
+                                                  "layout-home__pricing"
                                                   "layout-home__footer")) {
     @include element(header, (grid-area: layout-home__header, background-color: $bg-crimson));
     @include element(feature-1, (grid-area: layout-home__feature-1, background-color: $bg-cyan));
     @include element(feature-2, (grid-area: layout-home__feature-2, background-color: $bg-lime));
     @include element(feature-3, (grid-area: layout-home__feature-3, background-color: $bg-crimson));
-    @include element(footer, (grid-area: layout-home__footer, background-color: $bg-cyan));
+    @include element(pricing, (grid-area: layout-home__pricing, background-color: $bg-cyan));
+    @include element(footer, (grid-area: layout-home__footer, background-color: $bg-lime));
 }
