@@ -1,0 +1,44 @@
+%btn {
+    display: inline-block;
+    margin: 5px;
+    height: 3rem;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-align: center;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.btn--default {
+    @extend %btn;
+    background-color: #b9b9b9;
+    color: #fff;
+
+    &:hover {
+        background-color: #808080;
+    }
+}
+
+.btn--crimson {
+    @extend %btn;
+    background-color: crimson;
+    color: #fff;
+
+    &:hover {
+        background-color: #af1534;
+    }
+}
+
+.btn--cyan {
+    @extend %btn;
+    background-color: cyan;
+    color: #252525;
+    
+    &:hover {
+        background-color: #00cece; 
+    }
+}

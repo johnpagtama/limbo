@@ -6,8 +6,7 @@ $bg-lime: lime;
 
 @include block(layout-home, (display: grid, 
                              height: 100vh, 
-                             margin: 0 auto, 
-                             color: #292929,
+                             margin: 0 auto,
                              grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr,
                              grid-template-areas: "layout-home__header"
                                                   "layout-home__feature-1"

@@ -10,6 +10,7 @@ import { MessageComponent } from './components/shared/message/message.component'
 import { HomeComponent } from './components/home/home.component';
 import { MainHeaderComponent } from './components/shared/main-header/main-header.component';
 import { MainFooterComponent } from './components/shared/main-footer/main-footer.component';
+import { ButtonComponent } from './components/shared/button/button.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MainFooterComponent } from './components/shared/main-footer/main-footer
     MessageComponent,
     HomeComponent,
     MainHeaderComponent,
-    MainFooterComponent
+    MainFooterComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
