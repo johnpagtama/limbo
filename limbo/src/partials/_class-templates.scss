@@ -5,10 +5,8 @@
 //     }
 // }
 
-// Content mixin
-// @mixin content() {
-//     @content;
-// }
+// Placeholder selector mixin
+
 
 // Base class mixin
 @mixin block($class-name, $properties: ()) {
@@ -44,8 +42,6 @@
 // CSS Reset mixin
 
 // & Selector mixin
-
-// % Selector mixin
 
 // :Pseudo-class mixin
 
