@@ -1,14 +1,8 @@
-%btn {
-    display: inline-block;
-    margin: 5px;
-    height: 3rem;
-    border-radius: 5px;
-    border: 1px solid transparent;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    text-align: center;
+@import '../partials/class-templates';
 
-    &:hover {
-        cursor: pointer;
+@include block(btn, (display: inline-block, margin: 5px, height: 3rem, border-radius: 5px, border: 1px solid transparent)) {
+    @include element(txt, (font-family: "Arial, Helvetica, sans-serif", font-size: 1rem, text-align: center));
+    @include modifier(standard, (background-color: #b9b9b9, color: #fff)) {
+        @include pseudo(hover, (background-color: #808080));
     }
 }

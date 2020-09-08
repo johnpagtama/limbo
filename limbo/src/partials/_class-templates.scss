@@ -36,6 +36,8 @@
         @each $property-name, $property-value in $properties {
             #{$property-name}: $property-value;
         }
+
+        @content;
     }    
 }
 
@@ -44,6 +46,13 @@
 // & Selector mixin
 
 // :Pseudo-class mixin
+@mixin pseudo($pseudo-class-name, $properties: ()) {
+    @at-root #{&}#{':'}#{$pseudo-class-name} {
+        @each $property-name, $property-value in $properties {
+            #{$property-name}: $property-value;
+        }
+    }
+}
 
 // -Prefixed-properties mixin
 
