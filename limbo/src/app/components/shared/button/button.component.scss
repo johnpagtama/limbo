@@ -1,13 +1,13 @@
-@import '../../../../partials/class-templates';
-// @import '../../../../partials/button-templates';
+// @import '../../../../partials/class-templates';
+@import '../../../../partials/button-templates';
 
 
-@include block(btn, (display: inline-block, margin: 5px, height: 3rem, border-radius: 5px, border: 1px solid transparent)) {
-    @include element(txt, (font-family: Arial Helvetica sans-serif, font-size: 1rem, text-align: center));
-    @include modifier(standard, (background-color: #b9b9b9, color: #fff)) {
-        @include pseudo(hover, (background-color: #808080));
-    }
-}
+// @include block(btn, (display: inline-block, margin: 5px, height: 3rem, border-radius: 5px, border: 1px solid transparent)) {
+//     @include element(txt, (font-family: Arial Helvetica sans-serif, font-size: 1rem, text-align: center));
+//     @include modifier(standard, (background-color: #b9b9b9, color: #fff)) {
+//         @include pseudo(hover, (background-color: #808080));
+//     }
+// }
 // .btn--default {
 //     background-color: #b9b9b9;
 //     color: #fff;
@@ -17,20 +17,20 @@
 //     }
 // }
 
-.btn--error {
-    background-color: crimson;
-    color: #fff;
+// .btn--error {
+//     background-color: crimson;
+//     color: #fff;
 
-    &:hover {
-        background-color: #af1534;
-    }
-}
+//     &:hover {
+//         background-color: #af1534;
+//     }
+// }
 
-.btn--warn {
-    background-color: #fffc68;
-    color: #252525;
+// .btn--warn {
+//     background-color: #fffc68;
+//     color: #252525;
     
-    &:hover {
-        background-color: #eeeb5a; 
-    }
-}
+//     &:hover {
+//         background-color: #eeeb5a; 
+//     }
+// }

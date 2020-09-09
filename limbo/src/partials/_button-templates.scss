@@ -1,8 +1,70 @@
 @import '../partials/class-templates';
 
-@include block(btn, (display: inline-block, margin: 5px, height: 3rem, border-radius: 5px, border: 1px solid transparent)) {
-    @include element(txt, (font-family: "Arial, Helvetica, sans-serif", font-size: 1rem, text-align: center));
-    @include modifier(standard, (background-color: #b9b9b9, color: #fff)) {
-        @include pseudo(hover, (background-color: #808080));
+@include block(btn, (display: inline-block, margin: 5px, width: 8rem, height: 3rem, border-radius: 5px, border: 1px solid transparent, background-color: transparent)) {
+    @include element(txt, (font-family: Arial Helvetica sans-serif, font-size: 1rem, text-align: center));
+    @include modifier(basic, (background-color: #6d6d6d, color: #fff)) {
+        @include pseudo(hover, (background-color: #636363));
+    }
+    @include modifier(main, (background-color: #0077ff, color: #fff)) {
+        @include pseudo(hover, (background-color: #0066db));
+    }
+    @include modifier(info, (background-color: #00aeff, color: #fff)) {
+        @include pseudo(hover, (background-color: #009ee7));
+    }
+    @include modifier(success, (background-color: #459b2a, color: #fff)) {
+        @include pseudo(hover, (background-color: #3d8327));
+    }
+    @include modifier(warn, (background-color: #fffc68, color: #252525)) {
+        @include pseudo(hover, (background-color: #e2e05d));
+    }
+    @include modifier(error, (background-color: #dc143c, color: #fff)) {
+        @include pseudo(hover, (background-color: #af1534));
+    }
+    @include modifier(light, (background-color: #fdfdfd, color: #252525)) {
+        @include pseudo(hover, (background-color: #e9e9e9));
+    }
+    @include modifier(dark, (background-color: #313131, color: #fff)) {
+        @include pseudo(hover, (background-color: #252525));
+    }
+    
+    @include modifier(basic-outline, (border: 1px solid #b9b9b9, color: #b9b9b9)) {
+        @include pseudo(hover, (border: 1px solid #9b9b9b, background-color: #9b9b9b, color: #fff));
+    }
+    @include modifier(main-outline, (border: 1px solid #0077ff, color: #0077ff)) {
+        @include pseudo(hover, (border: 1px solid #0066db, background-color: #0066db, color: #fff));
+    }
+    @include modifier(info-outline, (border: 1px solid #00aeff, color: #00aeff)) {
+        @include pseudo(hover, (border: 1px solid #009ee7, background-color: #009ee7, color: #fff));
+    }
+    @include modifier(success-outline, (border: 1px solid #459b2a, color: #459b2a)) {
+        @include pseudo(hover, (border: 1px solid #3d8327, background-color: #3d8327, color: #fff));
+    }
+    @include modifier(warn-outline, (border: 1px solid #fffc68, color: #fffc68)) {
+        @include pseudo(hover, (border: 1px solid #e2e05d, background-color: #e2e05d, color: #252525));
+    }
+    @include modifier(error-outline, (border: 1px solid #dc143c, color: #dc143c)) {
+        @include pseudo(hover, (border: 1px solid #af1534, background-color: #af1534, color: #fff));
+    }
+    @include modifier(light-outline, (border: 1px solid #ececec, color: #ececec)) {
+        @include pseudo(hover, (border: 1px solid #cfcfcf, background-color: #cfcfcf, color: #252525));
+    }
+    @include modifier(dark-outline, (border: 1px solid #4b4b4b, color: #4b4b4b)) {
+        @include pseudo(hover, (border: 1px solid #3f3f3f, background-color: #3f3f3f, color: #fff));
+    }
+}
+
+@include block(btn-pill, (display: inline-block, margin: 5px, width: 8rem, height: 3rem, border-radius: 5px, border: 1px solid transparent, background-color: transparent)) {
+    @include element(txt, (font-family: Arial Helvetica sans-serif, font-size: 1rem, text-align: center));
+
+    @include modifier(dark, (border-radius: 20rem, border: 1px solid #4b4b4b, color: #4b4b4b)) {
+        @include pseudo(hover, (border: 1px solid #3f3f3f, background-color: #3f3f3f, color: #fff));
+    }
+}
+
+@include block(btn-fab, (display: inline-block, margin: 5px, padding-left: 1rem, padding-right: 1rem, width: 4rem, height: 4rem, border-radius: 5px, border: 1px solid transparent, background-color: transparent)) {
+    @include element(txt, (font-family: Arial Helvetica sans-serif, font-size: 1rem, text-align: center));
+
+    @include modifier(dark, (border-radius: 50%, border: 1px solid #4b4b4b, color: #4b4b4b)) {
+        @include pseudo(hover, (border: 1px solid #3f3f3f, background-color: #3f3f3f, color: #fff));
     }
 }

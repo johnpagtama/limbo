@@ -1,7 +1,7 @@
 @import '../../../partials/class-templates';
 
 $bg-crimson: crimson;
-$bg-cyan: cyan;
+$bg-cyan: #ffffff;
 $bg-lime: lime;
 
 @include block(layout-home, (display: grid, 
