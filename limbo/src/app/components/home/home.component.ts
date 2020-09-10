@@ -24,5 +24,12 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
+  btn = () => console.log('btn clicked');
+  btnOutline = () => console.log('btnOutline clicked');
+  btnPill = () => console.log('btnPill clicked');
+  btnPillOutline = () => console.log('btnPillOutline clicked');
+  btnFab = () => console.log('btnFab clicked');
+  btnFabOutline = () => console.log('btnFabOutline clicked');
 
 }
