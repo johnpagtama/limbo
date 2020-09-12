@@ -12,6 +12,7 @@ import { MainHeaderComponent } from './components/shared/main-header/main-header
 import { MainFooterComponent } from './components/shared/main-footer/main-footer.component';
 import { ButtonComponent } from './components/shared/button/button.component';
 import { ButtonDirective } from './directives/button.directive';
+import { InputDirective } from './directives/input.directive';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ButtonDirective } from './directives/button.directive';
     MainHeaderComponent,
     MainFooterComponent,
     ButtonComponent,
-    ButtonDirective
+    ButtonDirective,
+    InputDirective
   ],
   imports: [
     BrowserModule,
