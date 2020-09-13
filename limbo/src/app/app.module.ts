@@ -11,8 +11,7 @@ import { HomeComponent } from './components/home/home.component';
 import { MainHeaderComponent } from './components/shared/main-header/main-header.component';
 import { MainFooterComponent } from './components/shared/main-footer/main-footer.component';
 import { ButtonComponent } from './components/shared/button/button.component';
-import { ButtonDirective } from './directives/button.directive';
-import { InputDirective } from './directives/input.directive';
+import { BitButtonDirective } from './directives/bit-button.directive';
 
 @NgModule({
   declarations: [
@@ -25,8 +24,7 @@ import { InputDirective } from './directives/input.directive';
     MainHeaderComponent,
     MainFooterComponent,
     ButtonComponent,
-    ButtonDirective,
-    InputDirective
+    BitButtonDirective
   ],
   imports: [
     BrowserModule,
