@@ -22,7 +22,7 @@ import { ButtonComponent } from './components/shared/button/button.component';
     HomeComponent,
     MainHeaderComponent,
     MainFooterComponent,
-    ButtonComponent
+    ButtonComponent  
   ],
   imports: [
     BrowserModule,
