@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-main-header',
@@ -6,6 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-header.component.scss']
 })
 export class MainHeaderComponent implements OnInit {
+
+  headerLinks: any = [
+    { link: '#', text: 'Why Limbo?' },
+    { link: '#', text: 'Updates' },
+    { link: '#', text: 'Pricing' },
+    { link: '#', text: 'Support' }
+  ];
 
   constructor() { }
 

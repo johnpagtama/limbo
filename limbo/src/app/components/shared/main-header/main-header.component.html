@@ -1,1 +1,19 @@
-<p>main-header works!</p>
+<ng-container *ngTemplateOutlet="nav"></ng-container>
+    
+<ng-template #nav>
+    <nav>
+        💩Limbo
+        <ul>
+            <ng-container *ngFor="let headerLink of headerLinks">
+                <ng-container *ngTemplateOutlet="headerList; context: headerLink"></ng-container>
+            </ng-container>
+        </ul>
+        <app-button text="Download" classes="btn btn__txt btn--main"></app-button>    
+    </nav>
+</ng-template>
+
+<ng-template #headerList let-link="link" let-text="text">
+    <li>
+        <a routerLink="{{link}}">{{text}}</a>
+    </li>
+</ng-template>
