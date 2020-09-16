@@ -1,1 +1,20 @@
-<p>main-footer works!</p>
+Social Links
+<ng-container *ngTemplateOutlet="footer"></ng-container>
+💩Limbo
+&copy; 2020, Limbo
+
+<ng-template #footer>
+    <nav>
+        <ul>
+            <ng-container *ngFor="let footerLink of footerLinks">
+                <ng-container *ngTemplateOutlet="footerList; context: footerLink"></ng-container>
+            </ng-container>
+        </ul>
+    </nav>
+</ng-template>
+
+<ng-template #footerList let-link="link" let-text="text">
+    <li>
+        <a routerLink="{{link}}">{{text}}</a>
+    </li>
+</ng-template>

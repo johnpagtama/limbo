@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-footer.component.scss']
 })
 export class MainFooterComponent implements OnInit {
+  footerLinks: any[] = [
+    { link: '#', text: 'About Us' },
+    { link: '#', text: 'Privacy' },
+    { link: '#', text: 'Terms of Use' },
+    { link: '#', text: 'License'}
+  ];
 
   constructor() { }
 

@@ -6,12 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  footerLinks = [
-    { link: '#', text: 'About Us' },
-    { link: '#', text: 'Privacy' },
-    { link: '#', text: 'Terms of Use' },
-    { link: '#', text: 'License'}
-  ];
   
   constructor() { }
 

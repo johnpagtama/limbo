@@ -34,26 +34,7 @@
         <app-button text="Get Started" classes="btn btn__txt btn--info"></app-button>
     </section>
     <footer class="layout-home__footer">
-        Social Links
-        <ng-container *ngTemplateOutlet="footer"></ng-container>
-        💩Limbo
-        &copy; 2020, Limbo
-        
-        <ng-template #footer>
-            <nav>
-                <ul>
-                    <ng-container *ngFor="let footerLink of footerLinks">
-                        <ng-container *ngTemplateOutlet="footerList; context: footerLink"></ng-container>
-                    </ng-container>
-                </ul>
-            </nav>
-        </ng-template>
-        
-        <ng-template #footerList let-link="link" let-text="text">
-            <li>
-                <a routerLink="{{link}}">{{text}}</a>
-            </li>
-        </ng-template>
+        <app-main-footer></app-main-footer>
     </footer>
 </section>
 <!-- <a routerLink="/Chat">Open in your browser</a> -->

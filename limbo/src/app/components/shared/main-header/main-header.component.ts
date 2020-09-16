@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { HeaderLink } from '../../../interfaces/header-link';
 
 @Component({
   selector: 'app-main-header',
@@ -7,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class MainHeaderComponent implements OnInit {
 
-  headerLinks: any = [
+  headerLinks: HeaderLink[] = [
     { link: '#', text: 'Why Limbo?' },
     { link: '#', text: 'Updates' },
     { link: '#', text: 'Pricing' },
