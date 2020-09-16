@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Link } from '../../../interfaces/link';
 
 @Component({
   selector: 'app-main-footer',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-footer.component.scss']
 })
 export class MainFooterComponent implements OnInit {
-  footerLinks: any[] = [
+  footerLinks: Link[] = [
     { link: '#', text: 'About Us' },
     { link: '#', text: 'Privacy' },
     { link: '#', text: 'Terms of Use' },
