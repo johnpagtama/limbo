@@ -11,6 +11,7 @@ import { HomeComponent } from './components/home/home.component';
 import { MainHeaderComponent } from './components/shared/main-header/main-header.component';
 import { MainFooterComponent } from './components/shared/main-footer/main-footer.component';
 import { ButtonComponent } from './components/shared/button/button.component';
+import { FeatureComponent } from './components/shared/feature/feature.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ButtonComponent } from './components/shared/button/button.component';
     HomeComponent,
     MainHeaderComponent,
     MainFooterComponent,
-    ButtonComponent  
+    ButtonComponent,
+    FeatureComponent  
   ],
   imports: [
     BrowserModule,

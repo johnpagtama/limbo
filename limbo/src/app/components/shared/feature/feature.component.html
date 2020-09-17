@@ -1,0 +1,17 @@
+<ng-container *ngTemplateOutlet="feature"></ng-container>
+
+<ng-template #feature>
+    <section [ngClass]="classes">
+        <header>
+            <ng-container *ngFor="let feature of features">
+                <ng-container *ngTemplateOutlet="featureList; context: feature"></ng-container>
+            </ng-container>
+        </header>
+    </section>
+</ng-template>
+
+<ng-template #featureList let-h1="heading" let-f1="feature1" let-f2="feature2">
+    <h1>{{h1}}</h1>
+    <p>{{f1}}</p>
+    <p>{{f2}}</p>
+</ng-template>
