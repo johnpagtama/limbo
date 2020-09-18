@@ -1,17 +1,19 @@
 <ng-container *ngTemplateOutlet="feature"></ng-container>
 
 <ng-template #feature>
-    <section [ngClass]="classes">
+    <ng-container *ngFor="let feature of features">
+        <ng-container *ngTemplateOutlet="featureList; context: feature"></ng-container>
+    </ng-container>
+</ng-template>
+
+<ng-template #featureList let-className="className" let-h1="heading" let-f1="feature1" let-f2="feature2">
+    <section [ngClass]="className">
         <header>
-            <ng-container *ngFor="let feature of features">
-                <ng-container *ngTemplateOutlet="featureList; context: feature"></ng-container>
-            </ng-container>
+            <h1>{{h1}}</h1>
+            <p>{{f1}}</p>
+            <p>{{f2}}</p>
         </header>
     </section>
 </ng-template>
 
-<ng-template #featureList let-h1="heading" let-f1="feature1" let-f2="feature2">
-    <h1>{{h1}}</h1>
-    <p>{{f1}}</p>
-    <p>{{f2}}</p>
-</ng-template>
+<!-- <section [ngClass]="features">sdfsf</section> -->
