@@ -9,10 +9,10 @@ import { Link } from '../../../interfaces/link';
 export class MainHeaderComponent implements OnInit {
 
   headerLinks: Link[] = [
-    { link: '#', text: 'Why Limbo?' },
-    { link: '#', text: 'Updates' },
-    { link: '#', text: 'Pricing' },
-    { link: '#', text: 'Support' }
+    { gridAreaClass: 'main-nav__limbo', link: '#', text: 'Why Limbo?' },
+    { gridAreaClass: 'main-nav__updates', link: '#', text: 'Updates' },
+    { gridAreaClass: 'main-nav__pricing', link: '#', text: 'Pricing' },
+    { gridAreaClass: 'main-nav__support', link: '#', text: 'Support' }
   ];
 
   constructor() { }

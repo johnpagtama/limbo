@@ -1,7 +1,7 @@
 <ng-container *ngTemplateOutlet="nav"></ng-container>
     
 <ng-template #nav>
-    <nav>
+    <nav class="main-nav">
         💩Limbo
         <ul>
             <ng-container *ngFor="let headerLink of headerLinks">
@@ -12,8 +12,8 @@
     </nav>
 </ng-template>
 
-<ng-template #headerList let-link="link" let-text="text">
-    <li>
+<ng-template #headerList let-link="link" let-text="text" let-area="gridAreaClass">
+    <li class="{{area}}">
         <a routerLink="{{link}}">{{text}}</a>
     </li>
 </ng-template>

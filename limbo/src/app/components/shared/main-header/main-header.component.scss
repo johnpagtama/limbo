@@ -1,0 +1,16 @@
+@import '../../../../partials/class-templates';
+
+@include block(main-nav, (display: grid, 
+                                 margin: 0 auto,
+                                 grid-template-columns: repeat(3, 1fr),
+                                 grid-template-areas: /* 
+                                                      ". . main-nav__limbo" */
+                                                      "main-nav__updates" 
+                                                      "main-nav__pricing" 
+                                                      "main-nav__support . . . .")) {
+    // @include element(home, (grid-area: main-nav__home));
+    @include element(limbo, (grid-area: main-nav__limbo, list-style-type: none));
+    @include element(updates, (grid-area: main-nav__updates, list-style-type: none));
+    @include element(pricing, (grid-area: main-nav__pricing, list-style-type: none));
+    @include element(support, (grid-area: main-nav__support, list-style-type: none));
+}
