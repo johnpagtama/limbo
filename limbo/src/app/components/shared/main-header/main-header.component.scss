@@ -9,8 +9,9 @@
                                                       "main-nav__pricing" 
                                                       "main-nav__support . . . .")) {
     // @include element(home, (grid-area: main-nav__home));
-    @include element(limbo, (grid-area: main-nav__limbo, list-style-type: none));
-    @include element(updates, (grid-area: main-nav__updates, list-style-type: none));
-    @include element(pricing, (grid-area: main-nav__pricing, list-style-type: none));
-    @include element(support, (grid-area: main-nav__support, list-style-type: none));
+    @include element(limbo, (grid-area: main-nav__limbo, display: inline, list-style-type: none, padding: 0 5px));
+    @include element(updates, (grid-area: main-nav__updates, display: inline, list-style-type: none, padding: 0 5px));
+    @include element(pricing, (grid-area: main-nav__pricing, display: inline, list-style-type: none, padding: 0 5px));
+    @include element(support, (grid-area: main-nav__support, display: inline, list-style-type: none, padding: 0 5px));
+    @include element(txt-dec-none, (text-decoration: none));
 }
