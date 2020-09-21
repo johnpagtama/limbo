@@ -1,5 +1,6 @@
 export interface Link {
-    gridAreaClass: string,
+    gridArea: string,
+    classes: string,
     link: string,
     text: string
 }

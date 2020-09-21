@@ -2,18 +2,18 @@
     
 <ng-template #nav>
     <nav class="main-nav">
-        💩Limbo
-        <ul>
+        <a class="main-nav__logo main-nav__txt-dec-none" routerLink="#">Logo</a>
+        <ul class="main-nav__txt-center">
             <ng-container *ngFor="let headerLink of headerLinks">
                 <ng-container *ngTemplateOutlet="headerList; context: headerLink"></ng-container>
             </ng-container>
         </ul>
-        <app-button text="Download" classes="btn btn__txt btn--main"></app-button>    
+        <app-button class="main-nav__download" text="Download" classes="btn btn__txt btn--main"></app-button>  
     </nav>
 </ng-template>
 
-<ng-template #headerList let-link="link" let-text="text" let-area="gridAreaClass">
+<ng-template #headerList let-area="gridArea" let-className="classes" let-link="link" let-text="text">
     <li class="{{area}}">
-        <a class="main-nav__txt-dec-none" routerLink="{{link}}">{{text}}</a>
+        <a class="{{className}}" routerLink="{{link}}">{{text}}</a>
     </li>
 </ng-template>
