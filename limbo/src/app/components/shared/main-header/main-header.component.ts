@@ -7,7 +7,6 @@ import { Link } from '../../../interfaces/link';
   styleUrls: ['./main-header.component.scss']
 })
 export class MainHeaderComponent implements OnInit {
-
   headerLinks: Link[] = [
     { gridArea: 'main-nav__links', classes: 'main-nav__txt-dec-none', link: '#', text: 'Why Limbo?' },
     { gridArea: 'main-nav__links', classes: 'main-nav__txt-dec-none', link: '#', text: 'Updates' },

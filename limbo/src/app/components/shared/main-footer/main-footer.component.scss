@@ -1,0 +1,11 @@
+@import '../../../../partials/class-templates';
+
+@include block(main-footer, (display: grid, 
+                             margin: 1rem auto 0,
+                             grid-template-columns: 1fr 2fr 1fr,
+                             grid-template-areas: "main-footer__social main-footer__links main-footer__copyright")) {
+    @include element(social, (grid-area: main-footer__social, margin: 1rem 0 0, justify-self: center));
+    @include element(links, (grid-area: main-footer__links, display: inline, list-style-type: none, text-decoration: none, padding: 0 10px));
+    @include element(copyright, (grid-area: main-footer__copyright, align-self: center));
+    @include element(txt-dec-none, (text-decoration: none));
+}

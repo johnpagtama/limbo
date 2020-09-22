@@ -3,7 +3,7 @@
 <ng-template #nav>
     <nav class="main-nav">
         <a class="main-nav__logo main-nav__txt-dec-none" routerLink="#">Logo</a>
-        <ul class="main-nav__txt-center">
+        <ul>
             <ng-container *ngFor="let headerLink of headerLinks">
                 <ng-container *ngTemplateOutlet="headerList; context: headerLink"></ng-container>
             </ng-container>

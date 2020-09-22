@@ -4,12 +4,8 @@
                                  margin: 1rem auto 0,
                                  grid-template-columns: 1fr 2fr 1fr,
                                  grid-template-areas: "main-nav__logo main-nav__links main-nav__download")) {
-    // @include element(home, (grid-area: main-nav__home));
-    @include element(logo, (grid-area: main-nav__logo, display: inline, margin: 1rem 0 0, justify-self: end));
+    @include element(logo, (grid-area: main-nav__logo, margin: 1rem 0 0, justify-self: center));
     @include element(links, (grid-area: main-nav__links, display: inline, list-style-type: none, text-decoration: none, padding: 0 10px));
-    // @include element(updates, (grid-area: main-nav__updates, display: inline, list-style-type: none, text-decoration: none, padding: 0 10px));
-    // @include element(pricing, (grid-area: main-nav__pricing, display: inline, list-style-type: none, text-decoration: none, padding: 0 10px));
-    // @include element(support, (grid-area: main-nav__support, display: inline, list-style-type: none, text-decoration: none, padding: 0 10px));
     @include element(download, (grid-area: main-nav__download, display: inline));
     @include element(txt-dec-none, (text-decoration: none));
     @include element(txt-center, (text-align: center));

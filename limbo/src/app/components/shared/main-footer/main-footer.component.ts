@@ -8,10 +8,10 @@ import { Link } from '../../../interfaces/link';
 })
 export class MainFooterComponent implements OnInit {
   footerLinks: Link[] = [
-    { gridArea: 'main-about', classes: '', link: '#', text: 'About Us' },
-    { gridArea: 'main-privacy', classes: '', link: '#', text: 'Privacy' },
-    { gridArea: 'main-terms', classes: '', link: '#', text: 'Terms of Use' },
-    { gridArea: 'main-license', classes: '', link: '#', text: 'License' }
+    { gridArea: 'main-footer__links', classes: 'main-footer__txt-dec-none', link: '#', text: 'About Us' },
+    { gridArea: 'main-footer__links', classes: 'main-footer__txt-dec-none', link: '#', text: 'Privacy' },
+    { gridArea: 'main-footer__links', classes: 'main-footer__txt-dec-none', link: '#', text: 'Terms of Use' },
+    { gridArea: 'main-footer__links', classes: 'main-footer__txt-dec-none', link: '#', text: 'License' }
   ];
 
   constructor() { }

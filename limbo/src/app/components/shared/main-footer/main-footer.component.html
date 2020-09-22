@@ -1,19 +1,19 @@
-Social Links
 <ng-container *ngTemplateOutlet="footer"></ng-container>
-💩Limbo &copy; 2020, Limbo
 
 <ng-template #footer>
-    <nav>
-        <ul>
+    <nav class="main-footer">
+        <a class="main-footer__social main-footer__txt-dec-none" routerLink="#">Social Links</a>
+        <ul class="main-footer__txt-center">
             <ng-container *ngFor="let footerLink of footerLinks">
                 <ng-container *ngTemplateOutlet="footerList; context: footerLink"></ng-container>
             </ng-container>
         </ul>
+        <span class="main-footer__copyright">💩Limbo &copy; 2020, Limbo</span>
     </nav>
 </ng-template>
 
-<ng-template #footerList let-link="link" let-text="text">
-    <li>
-        <a routerLink="{{link}}">{{text}}</a>
+<ng-template #footerList let-area="gridArea" let-className="classes" let-link="link" let-text="text">
+    <li class="{{area}}">
+        <a class="{{className}}" routerLink="{{link}}">{{text}}</a>
     </li>
 </ng-template>
