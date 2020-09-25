@@ -1,3 +1,19 @@
 @import '../../../../partials/class-templates';
 
-@include block(card, (border: 1px solid #d3d3d3, border-radius: 5px, margin: 1rem, padding: 0 1.5rem, width: 18rem)) 
+@include block(card, (display: grid, 
+                      border: 1px solid #d3d3d3, 
+                      border-radius: 5px, 
+                      margin: 1rem, 
+                      padding: 0 1.5rem, 
+                      width: 18rem,
+                      grid-template-areas: "card__title"
+                                           "card__desc"
+                                           "card__price"
+                                           "card__button"
+                                           "card__perk")) {
+    @include element(title, (grid-area: card__title));
+    @include element(desc, (grid-area: card__desc));
+    @include element(price, (grid-area: card__price));
+    @include element(button, (grid-area: card__button, justify-self: center));
+    @include element(perk, (grid-area: card__perk));
+}
