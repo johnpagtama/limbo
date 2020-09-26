@@ -1,7 +1,9 @@
-<div class="card">
-    <h3 class="card__title">Title</h3>
-    <p class="card__desc">Description</p>
-    <h3 class="card__price">Price</h3>
-    <app-button class="card__button" routerLink="/Chat" text="Get Started" classes="btn btn__txt btn--main"></app-button>
-    <p class="card__perk">Perks</p>
+<div class="card" *ngFor="let data of cardData">
+    <h3 class="card__title">{{data.title}}</h3>
+    <p class="card__desc">{{data.description}}</p>
+    <h3 class="card__price">{{data.price}}</h3>
+    <app-button class="card__button" routerLink="/Chat" text="{{data.buttonText}}" classes="btn btn__txt btn--main"></app-button>
+    <div *ngFor="let perk of perks">
+        <p class="card__perk">{{perk}}</p>
+    </div>
 </div>
