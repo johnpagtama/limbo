@@ -1,6 +1,6 @@
 @import '../../../../partials/class-templates';
 
-@include block(card, (display: grid, 
+@include block(card, (display: inline-grid, 
                       border: 1px solid #d3d3d3, 
                       border-radius: 5px, 
                       margin: 1rem, 
