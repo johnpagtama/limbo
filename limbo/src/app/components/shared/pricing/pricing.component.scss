@@ -1,0 +1,7 @@
+@import '../../../../partials/class-templates';
+
+@include block(pricing, (display: grid,
+                         grid-template-columns: 1fr,
+                         grid-template-areas: "pricing__card")) { 
+    @include element(card, (grid-area: pricing__card, justify-self: center));
+} 

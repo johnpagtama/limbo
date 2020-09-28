@@ -7,12 +7,6 @@ import { Card } from '../../../interfaces/card';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent implements OnInit {
-  // perks: any[] = [
-  //   ['Access up to 10,000 recent messages', '5GB file storage', '5 servers'],
-  //   ['Unlimited access to all messages', '10GB file storage', '10 servers'],
-  //   ['Unlimited access to all messages', '1TB file storage', 'Unlimited servers']
-  // ];
-
   cardData: Card[] = [
     { title: 'Free', 
       description: 'For individuals or small teams', 
