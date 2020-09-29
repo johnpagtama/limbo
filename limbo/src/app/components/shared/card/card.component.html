@@ -1,11 +1,21 @@
-<div class="card" *ngFor="let data of cardData">
-    <h3 class="card__title">{{data.title}}</h3>
-    <p class="card__desc">{{data.description}}</p>
-    <h3 class="card__price">{{data.price}}</h3>
-    <app-button class="card__button"  text="{{data.buttonText}}" classes="btn btn__txt btn--main"></app-button>
-    <div class="card__perk">
-        <p>{{data.messageCap}}</p>
-        <p>{{data.storageCap}}</p>
-        <p>{{data.serverCap}}</p>
-    </div>
-</div>
+<ng-container *ngTemplateOutlet="card"></ng-container>
+
+<ng-template #card>
+    <ng-container *ngFor="let data of cardData">
+        <ng-container *ngTemplateOutlet="cardList; context: data"></ng-container>
+    </ng-container>
+
+    <ng-template #cardList let-title="title" let-desc="description" let-price="price" let-btnTxt="buttonText" let-msg="messageCap" let-storage="storageCap" let-server="serverCap">
+        <div class="card">
+            <h3 class="card__title">{{title}}</h3>
+            <p class="card__desc">{{desc}}</p>
+            <h3 class="card__price">{{price}}</h3>
+            <app-button class="card__button"  text="{{btnTxt}}" classes="btn btn__txt btn--main"></app-button>
+            <div class="card__perk">
+                <p>{{msg}}</p>
+                <p>{{storage}}</p>
+                <p>{{server}}</p>
+            </div>
+        </div>
+    </ng-template>
+</ng-template>

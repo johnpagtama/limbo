@@ -1,5 +1,9 @@
-<div class="pricing">
-    <div class="pricing__card">
-        <app-card></app-card>
+<ng-container *ngTemplateOutlet="pricingTier"></ng-container>
+
+<ng-template #pricingTier>
+    <div class="pricing">
+        <div class="pricing__card">
+            <app-card></app-card>
+        </div>
     </div>
-</div>
+</ng-template>
