@@ -1,4 +1,29 @@
-<ng-container *ngTemplateOutlet="feature"></ng-container>
+<!-- <ng-container *ngFor="let f of featureData">
+    <section class="f.className n">
+        <header>
+            <h1>{{f.heading}}</h1>
+            <p>{{f.feature1}}</p>
+            <p>{{f.feature2}}</p>
+        </header>
+    </section>
+</ng-container> -->
+
+<section class="feature">
+    <div class="feature__svg">
+        <p>image</p>
+    </div>
+    <div class="feature__info">
+        <h2 class="title">Title</h2>
+        <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nobis quo rerum optio excepturi eum voluptates ipsam aperiam, corporis 
+            provident magni dolores ipsa ducimus ratione, quibusdam eius adipisci itaque 
+            numquam rem.
+        </p>
+    </div>
+</section>
+
+<!-- <ng-container *ngTemplateOutlet="feature"></ng-container>
 
 <ng-template #feature>
     <ng-container *ngFor="let feature of features">
@@ -14,6 +39,4 @@
             <p>{{f2}}</p>
         </header>
     </section>
-</ng-template>
-
-<!-- <section [ngClass]="features">sdfsf</section> -->
+</ng-template> -->

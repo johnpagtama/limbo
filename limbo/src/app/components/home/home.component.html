@@ -1,9 +1,16 @@
-<section class="layout-home">
+<div class="layout-home">
     <header class="layout-home__header">
         <app-main-header></app-main-header>
     </header>
-    <!-- <app-feature features="featureData"></app-feature> -->
-    <ng-container *ngFor="let f of featureData">
+    
+    <section class="n">
+        <app-feature></app-feature>
+    </section>
+
+    <section class="n layout-home__pricing">
+        <app-pricing></app-pricing>
+    </section>
+    <!-- <ng-container *ngFor="let f of featureData">
         <section [ngClass]="f.className">
             <header>
                 <h1>{{f.heading}}</h1>
@@ -11,42 +18,10 @@
                 <p>{{f.feature2}}</p>
             </header>
         </section>
-    </ng-container>
-    <!-- <main> -->
-        <!-- <section class="layout-home__feature-1">
-            <header>
-                <h1>Join a community or start your own</h1>
-                <p>Manage members and grant special privileges.</p>
-                <p>Create private channels, and many more.</p>
-            </header>
-        </section>
-        <section class="layout-home__feature-2">
-            <header>
-                <h1>Easily keep in touch</h1>
-                <p>Chat with old friends or make new ones.</p>
-                <p>Friends are notified when you are connected.</p>
-            </header>
-        </section>
-        <section class="layout-home__feature-3">
-            <header>
-                <h1>A place to meet like minded individuals</h1>
-                <p>Discuss your interests or share ideas.</p>
-            </header>
-        </section> -->
-    <!-- </main> -->
-    <section class="layout-home__pricing">
-        <!-- <header>
-            <h1>Icon</h1>
-            <h2>Price</h2>
-        </header>
-        <h1>Tier</h1>
-        <p>Features[]</p>
-        <app-button text="Get Started" classes="btn btn__txt btn--info"></app-button> -->
-        <app-pricing></app-pricing>
-    </section>
+    </ng-container> -->
     <footer class="layout-home__footer">
         <app-main-footer></app-main-footer>
     </footer>
-</section>
+</div>
 <!-- <a routerLink="/Chat">Open in your browser</a> -->
 

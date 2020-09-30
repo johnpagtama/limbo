@@ -1,3 +1,9 @@
-.layout-home__feature-2 {
-    background-color: #cacaca;
+@import '../../../../partials/class-templates';
+
+@include block(feature, (display: grid,
+                         margin: 1rem 1rem,
+                         grid-template-columns: 1fr 2fr,
+                         grid-template-areas: "feature__svg feature__info")) {
+    @include element(svg, (grid-area: feature__svg, width: 27rem, height: 12rem, background-color: #777, justify-self: center));
+    @include element(info, (grid-area: feature__info));
 }
