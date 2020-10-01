@@ -1,42 +1,19 @@
-<!-- <ng-container *ngFor="let f of featureData">
-    <section class="f.className n">
-        <header>
-            <h1>{{f.heading}}</h1>
-            <p>{{f.feature1}}</p>
-            <p>{{f.feature2}}</p>
-        </header>
-    </section>
-</ng-container> -->
+<ng-container *ngTemplateOutlet="features"></ng-container>
 
-<section class="feature">
-    <div class="feature__svg">
-        <p>image</p>
-    </div>
-    <div class="feature__info">
-        <h2 class="title">Title</h2>
-        <p class="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Nobis quo rerum optio excepturi eum voluptates ipsam aperiam, corporis 
-            provident magni dolores ipsa ducimus ratione, quibusdam eius adipisci itaque 
-            numquam rem.
-        </p>
-    </div>
-</section>
-
-<!-- <ng-container *ngTemplateOutlet="feature"></ng-container>
-
-<ng-template #feature>
-    <ng-container *ngFor="let feature of features">
-        <ng-container *ngTemplateOutlet="featureList; context: feature"></ng-container>
+<ng-template #features>
+    <ng-container *ngFor="let feat of featureData">
+        <ng-container *ngTemplateOutlet="featureList; context: feat"></ng-container>
     </ng-container>
 </ng-template>
 
-<ng-template #featureList let-className="className" let-h1="heading" let-f1="feature1" let-f2="feature2">
-    <section [ngClass]="className">
-        <header>
-            <h1>{{h1}}</h1>
-            <p>{{f1}}</p>
-            <p>{{f2}}</p>
-        </header>
+<ng-template #featureList let-img="image" let-title="title" let-text="text">
+    <section class="feature">
+        <div class="feature__svg">
+            <p>{{img}}</p>
+        </div>
+        <div class="feature__info">
+            <h2 class="title">{{title}}</h2>
+            <p class="text">{{text}}</p>
+        </div>
     </section>
-</ng-template> -->
+</ng-template>
