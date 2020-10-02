@@ -6,8 +6,8 @@
     </ng-container>
 </ng-template>
 
-<ng-template #featureList let-img="image" let-title="title" let-text="text">
-    <section class="feature">
+<ng-template #featureList let-id="id" let-img="image" let-title="title" let-text="text">
+    <section id="{{id}}" class="feature">
         <div class="feature__svg">
             <p>{{img}}</p>
         </div>

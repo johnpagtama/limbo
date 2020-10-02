@@ -2,26 +2,14 @@
     <header class="layout-home__header">
         <app-main-header></app-main-header>
     </header>
-    
-    <section class="n">
+    <section class="layout-home__feature">
         <app-feature></app-feature>
     </section>
-
-    <section class="n layout-home__pricing">
+    <section class="layout-home__pricing">
         <app-pricing></app-pricing>
+        <app-jump-nav></app-jump-nav>
     </section>
-    <!-- <ng-container *ngFor="let f of featureData">
-        <section [ngClass]="f.className">
-            <header>
-                <h1>{{f.heading}}</h1>
-                <p>{{f.feature1}}</p>
-                <p>{{f.feature2}}</p>
-            </header>
-        </section>
-    </ng-container> -->
     <footer class="layout-home__footer">
         <app-main-footer></app-main-footer>
     </footer>
 </div>
-<!-- <a routerLink="/Chat">Open in your browser</a> -->
-

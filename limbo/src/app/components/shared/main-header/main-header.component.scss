@@ -9,4 +9,5 @@
     @include element(download, (grid-area: main-nav__download, display: inline));
     @include element(txt-dec-none, (text-decoration: none));
     @include element(txt-center, (text-align: center));
+    @include element(txt-white, (color: #fff));
 }

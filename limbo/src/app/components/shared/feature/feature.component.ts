@@ -8,37 +8,23 @@ import { Feature } from '../../../interfaces/feature';
 })
 export class FeatureComponent implements OnInit {
   featureData: Feature[] = [
-    { image: 'Image1', title: 'Tltle1', text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    { id: 'feature1', image: 'Image1', title: 'Tltle1', text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                                Nobis quo rerum optio excepturi eum voluptates ipsam aperiam, corporis 
                                                provident magni dolores ipsa ducimus ratione, quibusdam eius adipisci itaque 
                                                numquam rem.` },
-    { image: 'Image2', title: 'Title2', text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    { id: 'feature2', image: 'Image2', title: 'Title2', text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                                Nobis quo rerum optio excepturi eum voluptates ipsam aperiam, corporis 
                                                provident magni dolores ipsa ducimus ratione, quibusdam eius adipisci itaque 
                                                numquam rem.` },
-    { image: 'Image3', title: 'Title3', text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    { id: 'feature3', image: 'Image3', title: 'Title3', text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                                Nobis quo rerum optio excepturi eum voluptates ipsam aperiam, corporis 
                                                provident magni dolores ipsa ducimus ratione, quibusdam eius adipisci itaque 
                                                numquam rem.` }
   ];
 
-  // classes: {}[] = [
-  //   { className: 'layout-home__feature-1' },
-  //   { className: 'layout-home__feature-2' },
-  //   { className: 'layout-home__feature-3' },
-  // ];
-
-  // features: Feature[] = [
-  //   { className: 'layout-home__feature-1', heading: 'Join a community or start your own', feature1: 'Manage members and grant special privileges.', feature2: 'Create private channels and many more.' },
-  //   { className: 'layout-home__feature-2', heading: 'Easily keep in touch', feature1: 'Chat with old friends or make new ones.', feature2: 'Friends are notified when you are connected.' },
-  //   { className: 'layout-home__feature-3', heading: 'A place to meet like minded individuals', feature1: 'Discuss your interests', feature2: 'Share ideas' },
-  // ];
-
   constructor() { }
 
   ngOnInit(): void {
   }
-
-  // loop = () => this.features.map(x => console.log(x.className));
 
 }

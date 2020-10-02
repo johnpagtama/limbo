@@ -8,10 +8,10 @@ import { Link } from '../../../interfaces/link';
 })
 export class MainHeaderComponent implements OnInit {
   headerLinks: Link[] = [
-    { gridArea: 'main-nav__links', classes: 'main-nav__txt-dec-none', link: '#', text: 'Why Limbo?' },
-    { gridArea: 'main-nav__links', classes: 'main-nav__txt-dec-none', link: '#', text: 'Updates' },
-    { gridArea: 'main-nav__links', classes: 'main-nav__txt-dec-none', link: '#', text: 'Pricing' },
-    { gridArea: 'main-nav__links', classes: 'main-nav__txt-dec-none', link: '#', text: 'Support' }
+    { gridArea: 'main-nav__links', classes: 'main-nav__txt-dec-none main-nav__txt-white', link: '#', text: 'Why Limbo?' },
+    { gridArea: 'main-nav__links', classes: 'main-nav__txt-dec-none main-nav__txt-white', link: '#', text: 'Updates' },
+    { gridArea: 'main-nav__links', classes: 'main-nav__txt-dec-none main-nav__txt-white', link: '#', text: 'Pricing' },
+    { gridArea: 'main-nav__links', classes: 'main-nav__txt-dec-none main-nav__txt-white', link: '#', text: 'Support' }
   ];
 
   constructor() { }

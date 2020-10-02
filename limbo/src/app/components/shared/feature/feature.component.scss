@@ -2,10 +2,10 @@
 
 @include block(feature, (display: grid,
                          margin: 0 auto,
-                         padding: 2rem,
+                         padding: 6rem,
                          grid-template-columns: 1fr 2fr,
                          grid-template-areas: "feature__svg feature__info")) {
     @include element(svg, (grid-area: feature__svg, width: 27rem, height: 12rem, background-color: #777, justify-self: center));
     @include element(info, (grid-area: feature__info));
-    @include pseudo(nth-child(even), (display:grid, margin: 0 auto, padding: 2rem, grid-template-columns: 2fr 1fr, grid-template-areas: "feature__info feature__svg", background-color: #e4e4e4));
+    @include pseudo(nth-child(even), (display:grid, margin: 0 auto, padding: 6rem, grid-template-columns: 2fr 1fr, grid-template-areas: "feature__info feature__svg", background-color: #e4e4e4));
 }

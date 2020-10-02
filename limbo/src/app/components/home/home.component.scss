@@ -9,23 +9,11 @@ $bg-lime: lime;
                              margin: 0 auto,
                              grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr,
                              grid-template-areas: "layout-home__header"
-                                                  "layout-home__feature-1"
-                                                  "layout-home__feature-2"
-                                                  "layout-home__feature-3"
+                                                  "layout-home__feature"
                                                   "layout-home__pricing"
                                                   "layout-home__footer")) {
-    @include element(header, (grid-area: layout-home__header, background-color: $bg-crimson));
-    @include element(feature-1, (grid-area: layout-home__feature-1, background-color: $bg-cyan));
-    @include element(feature-2, (grid-area: layout-home__feature-2, background-color: $bg-lime));
-    @include element(feature-3, (grid-area: layout-home__feature-3, background-color: $bg-crimson));
-    @include element(pricing, (grid-area: layout-home__pricing, /*background-color: $bg-cyan*/));
-    @include element(footer, (grid-area: layout-home__footer, background-color: $bg-lime));
+    @include element(header, (grid-area: layout-home__header, background-color: #38383f));
+    @include element(feature, (grid-area: layout-home__feature, background-color: $bg-cyan));
+    @include element(pricing, (grid-area: layout-home__pricing));
+    @include element(footer, (grid-area: layout-home__footer, background-color: #38383f));
 }
-
-// section.n:nth-child(odd) {
-//     background-color: #fff;
-// }
-
-// section.n:nth-child(even) {
-//     background-color: gray;
-// }

@@ -14,6 +14,7 @@ import { ButtonComponent } from './components/shared/button/button.component';
 import { FeatureComponent } from './components/shared/feature/feature.component';
 import { CardComponent } from './components/shared/card/card.component';
 import { PricingComponent } from './components/shared/pricing/pricing.component';
+import { JumpNavComponent } from './components/shared/jump-nav/jump-nav.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { PricingComponent } from './components/shared/pricing/pricing.component'
     ButtonComponent,
     FeatureComponent,
     CardComponent,
-    PricingComponent  
+    PricingComponent,
+    JumpNavComponent  
   ],
   imports: [
     BrowserModule,

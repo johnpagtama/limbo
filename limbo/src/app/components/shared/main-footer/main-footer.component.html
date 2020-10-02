@@ -2,13 +2,13 @@
 
 <ng-template #footer>
     <nav class="main-footer">
-        <a class="main-footer__social main-footer__txt-dec-none" routerLink="#">Social Links</a>
+        <a class="main-footer__social main-footer__txt-dec-none main-footer__txt-white" routerLink="#">Social Links</a>
         <ul class="main-footer__txt-center">
             <ng-container *ngFor="let footerLink of footerLinks">
                 <ng-container *ngTemplateOutlet="footerList; context: footerLink"></ng-container>
             </ng-container>
         </ul>
-        <span class="main-footer__copyright">💩Limbo &copy; 2020, Limbo</span>
+        <span class="main-footer__copyright main-footer__txt-white">💩Limbo &copy; 2020, Limbo</span>
     </nav>
 </ng-template>
 

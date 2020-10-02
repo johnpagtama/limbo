@@ -8,4 +8,5 @@
     @include element(links, (grid-area: main-footer__links, display: inline, list-style-type: none, text-decoration: none, padding: 0 10px));
     @include element(copyright, (grid-area: main-footer__copyright, align-self: center));
     @include element(txt-dec-none, (text-decoration: none));
+    @include element(txt-white, (color: #fff));
 }
