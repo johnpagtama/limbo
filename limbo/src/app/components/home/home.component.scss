@@ -9,10 +9,12 @@ $bg-lime: lime;
                              margin: 0 auto,
                              grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr,
                              grid-template-areas: "layout-home__header"
+                                                  "layout-home__hero"
                                                   "layout-home__feature"
                                                   "layout-home__pricing"
                                                   "layout-home__footer")) {
     @include element(header, (grid-area: layout-home__header, background-color: #38383f));
+    @include element(hero, (grid-area: layout-home__hero, background-color: #fff));
     @include element(feature, (grid-area: layout-home__feature, background-color: $bg-cyan));
     @include element(pricing, (grid-area: layout-home__pricing));
     @include element(footer, (grid-area: layout-home__footer, background-color: #38383f));

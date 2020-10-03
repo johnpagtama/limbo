@@ -8,7 +8,7 @@ import { Feature } from '../../../interfaces/feature';
 })
 export class FeatureComponent implements OnInit {
   featureData: Feature[] = [
-    { id: 'feature1', image: 'Image1', title: 'Tltle1', text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    { id: 'feature1', image: 'Image1', title: 'Title1', text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                                Nobis quo rerum optio excepturi eum voluptates ipsam aperiam, corporis 
                                                provident magni dolores ipsa ducimus ratione, quibusdam eius adipisci itaque 
                                                numquam rem.` },
