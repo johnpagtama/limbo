@@ -1,0 +1,9 @@
+@import '../../../../partials/class-templates';
+
+@include block(hero, (display: grid, 
+                      height: 85vh,
+                      margin: 0,
+                      grid-template-columns: 1fr,
+                      grid-template-areas: "hero__item")) {
+    @include element(item, (grid-area: hero__item, margin: 0))
+}

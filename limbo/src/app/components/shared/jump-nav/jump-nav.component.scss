@@ -5,6 +5,7 @@
                           margin: auto 0,
                           justify-content: center,
                           justify-items: center,
+                          background-color: #fff,
                           grid-template-columns: repeat(3, 20rem),
                           grid-template-areas: "jump-nav__anchor1 jump-nav__anchor2 jump-nav__anchor3")) {
     @include element(anchor1, (grid-area: jump-nav__anchor1, list-style-type: none, padding: 0 10px));

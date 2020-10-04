@@ -15,6 +15,7 @@ import { FeatureComponent } from './components/shared/feature/feature.component'
 import { CardComponent } from './components/shared/card/card.component';
 import { PricingComponent } from './components/shared/pricing/pricing.component';
 import { JumpNavComponent } from './components/shared/jump-nav/jump-nav.component';
+import { HeroComponent } from './components/shared/hero/hero.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { JumpNavComponent } from './components/shared/jump-nav/jump-nav.componen
     FeatureComponent,
     CardComponent,
     PricingComponent,
-    JumpNavComponent  
+    JumpNavComponent,
+    HeroComponent  
   ],
   imports: [
     BrowserModule,

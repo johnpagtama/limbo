@@ -1,7 +1,6 @@
 @import '../../../partials/class-templates';
 
 $bg-crimson: crimson;
-$bg-cyan: #cacaca;
 $bg-lime: lime;
 
 @include block(layout-home, (display: grid, 
@@ -14,8 +13,8 @@ $bg-lime: lime;
                                                   "layout-home__pricing"
                                                   "layout-home__footer")) {
     @include element(header, (grid-area: layout-home__header, background-color: #38383f));
-    @include element(hero, (grid-area: layout-home__hero, background-color: #fff));
-    @include element(feature, (grid-area: layout-home__feature, background-color: $bg-cyan));
+    @include element(hero, (grid-area: layout-home__hero, background-color: #505058));
+    @include element(feature, (grid-area: layout-home__feature, background-color: #cacaca));
     @include element(pricing, (grid-area: layout-home__pricing));
     @include element(footer, (grid-area: layout-home__footer, background-color: #38383f));
 }
