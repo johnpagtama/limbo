@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hero.component.scss']
 })
 export class HeroComponent implements OnInit {
-
+  os: string = navigator.userAgent.split('(').pop().split(';').shift().split(' ').shift();
+  
   constructor() { }
 
   ngOnInit(): void {

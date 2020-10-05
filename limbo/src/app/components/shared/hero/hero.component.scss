@@ -3,7 +3,8 @@
 @include block(hero, (display: grid, 
                       height: 85vh,
                       margin: 0,
-                      grid-template-columns: 1fr,
-                      grid-template-areas: "hero__item")) {
-    @include element(item, (grid-area: hero__item, margin: 0))
+                      grid-template-columns: 1fr 2fr,
+                      grid-template-areas: "hero__info hero__svg")) {
+    @include element(info, (grid-area: hero__info, height: 60vh, margin: 0, justify-self: end, align-self: center, text-align: center));
+    @include element(svg, (grid-area: hero__svg, width: 80%, height: 60vh, background-color: #777, justify-self: center, align-self: center));
 }
