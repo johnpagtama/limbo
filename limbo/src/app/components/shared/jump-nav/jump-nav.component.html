@@ -1,11 +1,15 @@
-<nav class="jump-nav">
-    <li class="jump-nav__anchor1">
-        <a class="jump-nav__txt-dec-none" href="#feature1">Section 1</a>
+<ng-container *ngTemplateOutlet="jumpNav"></ng-container>
+
+<ng-template #jumpNav>
+    <nav class="jump-nav">
+        <ng-container *ngFor="let j of jumpNavData">
+            <ng-container *ngTemplateOutlet="jumpNavList; context: j"></ng-container>
+        </ng-container>
+    </nav>
+</ng-template>
+
+<ng-template #jumpNavList let-area="gridArea" let-classes="classes" let-link="link" let-txt="text">
+    <li class="{{area}}">
+        <a class="{{classes}}" href="{{link}}">{{txt}}</a>
     </li>
-    <li class="jump-nav__anchor2">
-        <a class="jump-nav__txt-dec-none" href="#feature2">Section 2</a>
-    </li>
-    <li class="jump-nav__anchor3">
-        <a class="jump-nav__txt-dec-none" href="#feature3">Section 3</a>
-    </li>
-</nav>
+</ng-template>
