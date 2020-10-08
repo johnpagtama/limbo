@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Link } from '../../../interfaces/link';
 
 @Component({
   selector: 'app-jump-nav',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./jump-nav.component.scss']
 })
 export class JumpNavComponent implements OnInit {
-  jumpNavData: any[] = [
+  jumpNavData: Link[] = [
     { gridArea: 'jump-nav__anchor1', classes: 'jump-nav__txt-dec-none', link: '#feature1', text: 'Section 1' },
     { gridArea: 'jump-nav__anchor2', classes: 'jump-nav__txt-dec-none', link: '#feature2', text: 'Section 2' },
     { gridArea: 'jump-nav__anchor3', classes: 'jump=nav__txt-dec-none', link: '#feature3', text: 'Section 3' }
