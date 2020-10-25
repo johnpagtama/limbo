@@ -1,0 +1,7 @@
+@mixin pseudo-class($pseudo-class-name, $properties: ()) {
+    @at-root #{&}#{':'}#{$pseudo-class-name} {
+        @each $property-name, $property-value in $properties {
+            #{$property-name}: $property-value;
+        }
+    }
+}
